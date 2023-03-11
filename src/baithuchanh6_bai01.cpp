@@ -1,11 +1,18 @@
 #include <iostream>
 using namespace std;
 
-void input(int n){
-    int A[n];
-    for (int i = 0; i < n, i++) {
-        cin >> A[n];  
-     }
+int *input(int n){
+    int *arr = new int[100];
+    for (int i = 0; i < n; i++){
+        cout << "Nhap phan tu arr[" << i << "] :"; cin >> arr[i];
+    }
+    return arr;
+}
+
+void output(int *arr, int n){
+    for (int i = 0; i < n; i++){
+        cout << "Phan tu arr[" << i << "] :" << arr[i] << endl;
+    }
 }
 
 void Test() {
