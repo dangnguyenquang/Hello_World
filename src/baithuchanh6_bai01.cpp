@@ -2,7 +2,7 @@
 using namespace std;
 
 int *input(int n){
-    int *arr = new int[100];
+    int arr int[100];
     for (int i = 0; i < n; i++){
         cout << "Nhap phan tu arr[" << i << "] :"; cin >> arr[i];
     }
@@ -15,8 +15,8 @@ void output(int *arr, int n){
     }
 }
 
-int sum(int *arr, int n){
-    int S = 0;
+double sum(int *arr, int n){
+    double S = 0;
     for (int i = 0; i < n; i++){
         S += arr[i];
     }
@@ -43,13 +43,6 @@ int countX(int *arr, int n, int x){
         if (arr[i] == x) count ++;
     }
     return count;
-}
-
-void evenLower20(int *arr, int n){
-    for (int i = 0; i < n; i++){
-        if ((arr[i]%2) == 0 && arr[i] < 20)
-            cout << arr[i] << " ";
-    }
 }
 
 void minLct(int *arr, int n){
