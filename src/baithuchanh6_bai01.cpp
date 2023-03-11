@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+void test() {
+    int x;
+    cout << "This is a test";
+}
 int *input(int n){
     int *arr = new int[100];
     for (int i = 0; i < n; i++){
@@ -11,7 +15,7 @@ int *input(int n){
 
 void output(int *arr, int n){
     for (int i = 0; i < n; i++){
-        cout << "Phan tu arr[" << i << "] :" << arr[i] << endl;
+        cout<<"Test"
     }
 }
 
