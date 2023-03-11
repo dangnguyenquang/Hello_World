@@ -5,8 +5,9 @@ void test() {
     int x;
     cout << "This is a test";
 }
+
 int *input(int n){
-    int *arr = new int[100];
+    int arr[100];
     for (int i = 0; i < n; i++){
         cout << "Nhap phan tu arr[" << i << "] :"; cin >> arr[i];
     }
@@ -53,18 +54,6 @@ void evenLower20(int *arr, int n){
     for (int i = 0; i < n; i++){
         if ((arr[i]%2) == 0 && arr[i] < 20)
             cout << arr[i] << " ";
-    }
-}
-
-void minLct(int *arr, int n){
-    int min = arr[0];
-    for (int i = 1; i < n; i++){
-        if (arr[i] < min) min = arr[i];
-    }
-    for (int i = 0; i < n; i++){
-        if (arr[i] == min){
-            cout << "arr[" << i << "] ";
-        }
     }
 }
 
